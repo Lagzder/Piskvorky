@@ -21,7 +21,7 @@ namespace Piskvorky
             bool volba = true;
 
 
-            int[,] array = new int[3, 3];
+            int[,] array = new int[3, 3]; //naplnenie pola nulami
 
             for (int k = 0; k < 3; k++)
             {
@@ -46,7 +46,7 @@ namespace Piskvorky
                     Console.WriteLine("1. hrac zadava\n");
                 }
 
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 3; i++) //vykreslenie aktualnej hracej plochy
                 {
                     for (int j = 0; j < 3; j++)
                     {
@@ -66,7 +66,7 @@ namespace Piskvorky
                     Console.WriteLine();
                 }
 
-                while (volba)
+                while (volba) //zadavanie vstupov riadku a stlpca
                 {
                     Console.WriteLine("\nZadaj riadok");
                     volbaR = Console.ReadLine();
@@ -98,7 +98,7 @@ namespace Piskvorky
                 }
                 
 
-                for (int i = 0; i < 3; i++) //pre hladanie po riadkoch + zaverecne vykreslenie plochy
+                for (int i = 0; i < 3; i++) //pre hladanie vyhercu po riadkoch + zaverecne vykreslenie plochy
                 {
                     for (int j = 0; j < 3; j++)
                     {
@@ -113,7 +113,7 @@ namespace Piskvorky
                             hrac2++;
                         }
 
-                        if (hrac1 == 3)
+                        if (hrac1 == 3) //ak riadok obsahuje 3 znaky 1. hraca
                         {
                             for (int ii = 0; ii < 3; ii++)
                             {
@@ -139,7 +139,7 @@ namespace Piskvorky
                             
                         }
 
-                        if (hrac2 == 3)
+                        if (hrac2 == 3) //ak riadok obsahuje znaky 2.hraca
                         {
                             for (int ii = 0; ii < 3; ii++)
                             {
@@ -170,7 +170,7 @@ namespace Piskvorky
 
                 }
 
-                for (int j = 0; j < 3; j++) //pre hladanie po stlpcoch + zaverecne vykreslenie plochy
+                for (int j = 0; j < 3; j++) //pre hladanie vyhercu po stlpcoch + zaverecne vykreslenie plochy
                 {
                     for (int i = 0; i < 3; i++)
                     {
@@ -187,7 +187,7 @@ namespace Piskvorky
 
                         if (hrac1 == 3)
                         {
-                            for (int ii = 0; ii < 3; ii++)
+                            for (int ii = 0; ii < 3; ii++) //vykreslenie
                             {
                                 for (int jj = 0; jj < 3; jj++)
                                 {
@@ -213,7 +213,7 @@ namespace Piskvorky
 
                         if (hrac2 == 3)
                         {
-                            for (int ii = 0; ii < 3; ii++)
+                            for (int ii = 0; ii < 3; ii++) // vykreslenie
                             {
                                 for (int jj = 0; jj < 3; jj++)
                                 {
