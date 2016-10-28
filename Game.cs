@@ -296,17 +296,17 @@ namespace Piskvorky
                 {
                     for (int j = 0; j < 3; j++)
                     {
-                        if(array[j,i] == 0)
+                        if(array[i, j] == 0)
                         {
                             poc1++;
                         } 
-                    }
-                    
-                    if(poc1 == 0)
-                    {
-                        Console.WriteLine("nikto nevyhral");
-                        z = false;
-                    }              
+                    }                       
+                }
+
+                if (poc1 == 0)
+                {
+                    Console.WriteLine("nikto nevyhral");
+                    z = false;
                 }
 
                 volba = true;
